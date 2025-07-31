@@ -197,11 +197,9 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 This project is based on the excellent work by **[Ed Roh](https://github.com/ed-roh)** and his [MERN Social Media App](https://github.com/ed-roh/mern-social). 
 
-**Original Project**: [https://github.com/ed-roh/mern-social](https://github.com/ed-roh/mern-social)
+**Original Project**: [https://github.com/ed-roh/mern-social](https://github.com/ed-roh/mern-social-media)
 
 **YouTube Tutorial**: [Build a COMPLETE Fullstack Responsive MERN App](https://www.youtube.com/watch?v=K8YELRmUb5o)
-
-**Discord Community**: [Join the discussion](https://discord.gg/2FfPeEk2mX)
 
 ### Enhancements Made
 - ✅ Fixed post sorting to display newest posts at the top
