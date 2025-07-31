@@ -189,10 +189,6 @@ Edit `client/src/theme.js` to customize colors, typography, and other theme prop
 - **New pages**: Add scenes in `client/src/scenes/`
 
 
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
 ## 🙏 Acknowledgments
 
 This project is based on the excellent work by **[Ed Roh](https://github.com/ed-roh)** and his [MERN Social Media App](https://github.com/ed-roh/mern-social). 
