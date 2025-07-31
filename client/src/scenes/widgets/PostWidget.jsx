@@ -22,6 +22,7 @@ const PostWidget = ({
   userPicturePath,
   likes,
   comments,
+  onRefresh,
 }) => {
   const [isComments, setIsComments] = useState(false);
   const dispatch = useDispatch();
@@ -45,6 +46,11 @@ const PostWidget = ({
     });
     const updatedPost = await response.json();
     dispatch(setPost({ post: updatedPost }));
+    
+    // 自动刷新页面数据
+    if (onRefresh) {
+      onRefresh();
+    }
   };
 
   return (

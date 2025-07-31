@@ -37,6 +37,15 @@ const PostsWidget = ({ userId, isProfile = false }) => {
     }
   }, []); // eslint-disable-line react-hooks/exhaustive-deps
 
+  // 刷新函数
+  const handleRefresh = () => {
+    if (isProfile) {
+      getUserPosts();
+    } else {
+      getPosts();
+    }
+  };
+
   return (
     <>
       {posts.map(
@@ -63,6 +72,7 @@ const PostsWidget = ({ userId, isProfile = false }) => {
             userPicturePath={userPicturePath}
             likes={likes}
             comments={comments}
+            onRefresh={handleRefresh}
           />
         )
       )}

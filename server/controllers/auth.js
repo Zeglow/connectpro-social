@@ -10,11 +10,12 @@ export const register = async (req, res) => {
       lastName,
       email,
       password,
-      picturePath,
       friends,
       location,
       occupation,
     } = req.body;
+    
+    const picturePath = req.file ? req.file.filename : "";
 
     const salt = await bcrypt.genSalt();
     const passwordHash = await bcrypt.hash(password, salt);
@@ -28,8 +29,8 @@ export const register = async (req, res) => {
       friends,
       location,
       occupation,
-      viewedProfile: Math.floor(Math.random() * 10000),
-      impressions: Math.floor(Math.random() * 10000),
+      viewedProfile: 0,
+      impressions: 0,
     });
     const savedUser = await newUser.save();
     res.status(201).json(savedUser);
